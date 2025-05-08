@@ -1,6 +1,3 @@
--- return {
---   "github/copilot.vim",
--- }
 return {
   {
     "supermaven-inc/supermaven-nvim",

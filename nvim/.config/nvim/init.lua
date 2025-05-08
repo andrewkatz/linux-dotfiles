@@ -93,14 +93,5 @@ vim.g.phpfmt_standard = "PSR2"
 -- Gdscript
 vim.cmd([[au FileType gdscript setlocal tabstop=4 shiftwidth=4 noexpandtab]])
 
--- Sort YAML files on buffer write
--- vim.api.nvim_set_keymap(
---   "n",
---   "<leader>s",
---   ":%! yq --prettyPrint --indent 2 'sort_keys(..)' -<CR>",
---   { noremap = true, silent = true }
--- )
--- vim.cmd("autocmd BufWritePre *.yml :%! yq --prettyPrint --indent 2 'sort_keys(..)' -")
-
 -- Auto save on focus lost
 vim.cmd("autocmd BufLeave,FocusLost * silent! wall")
