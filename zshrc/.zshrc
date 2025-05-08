@@ -148,9 +148,6 @@ eval "$(direnv hook zsh)"
 # Disable AWS pager
 export AWS_PAGER=""
 
-# Init pyenv
-eval "$(pyenv init -)"
-
 # Init rbenv
 eval "$(rbenv init -)"
 
