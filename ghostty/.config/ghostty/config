@@ -2,3 +2,5 @@ cursor-style = underline
 font-feature = -calt
 shell-integration-features = no-cursor
 theme = carbonfox
+window-theme = ghostty
+adw-toolbar-style = flat
