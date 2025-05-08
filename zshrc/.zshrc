@@ -4,9 +4,11 @@ precmd() { vcs_info }
 
 # Enable checking for (un)staged changes, enabling use of %u and %c
 zstyle ':vcs_info:*' check-for-changes true
+
 # Set custom strings for an unstaged vcs repo changes (*) and staged changes (+)
 zstyle ':vcs_info:*' unstagedstr ' %F{red}•%f'
 zstyle ':vcs_info:*' stagedstr ' %F{yellow}+%f'
+
 # Set the format of the Git information for vcs_info
 zstyle ':vcs_info:git:*' formats       '%b%u%c '
 zstyle ':vcs_info:git:*' actionformats '%b|%a%u%c '
@@ -39,19 +41,16 @@ setopt share_history          # share command history data
 setopt incappendhistory       # save history incrementally
 
 # Customize to your needs...
-# export PATH=/usr/local/opt/mysql@5.7/bin:$PATH
 export PATH=./.bin:$PATH
 export PATH=./bin:$PATH
+export PATH=~/.bin:$PATH
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 export PATH=${PATH}:~/.local/bin
 
 export EDITOR=nvim
-export ANDROID_HOME=~/Library/Android/sdk
 
 # Git
-alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 alias gco='git checkout'
-# alias gs='git status -s'
 alias gph='git push'
 alias gp='git pull'
 alias gco'git checkout'
@@ -95,7 +94,6 @@ alias rc='rails console'
 alias b='bundle'
 alias be='bundle exec'
 alias fs='foreman start'
-# alias reset='rails db:migrate:reset db:seed'
 alias rdm='rails db:migrate'
 
 alias c="cd"
@@ -121,12 +119,6 @@ alias t='terraform'
 alias ti='terraform init'
 alias ta='terraform apply'
 alias tp='terraform plan'
-
-alias snowsql=/Applications/SnowSQL.app/Contents/MacOS/snowsql
-
-alias notes='nvim ~/Documents/Notes'
-
-alias pm='open -a "Pixelmator Pro"'
 
 d()
 {
@@ -155,9 +147,6 @@ eval "$(direnv hook zsh)"
 
 # Disable AWS pager
 export AWS_PAGER=""
-
-# Init nodenv
-# eval "$(nodenv init -)"
 
 # Init pyenv
 eval "$(pyenv init -)"
