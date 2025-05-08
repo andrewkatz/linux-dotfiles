@@ -156,3 +156,10 @@ eval "$(rbenv init -)"
 
 # Init starship
 eval "$(starship init zsh)"
+
+# Set underline cursor
+echo -ne "\033[4 q"
+
+chpwd() {
+  printf '\033]7;file://%s%s\033\\' "$HOST" "$PWD"
+}
