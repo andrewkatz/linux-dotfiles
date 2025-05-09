@@ -30,6 +30,7 @@ bindkey "^[[B" down-line-or-beginning-search # Down
 export HISTFILE=~/.zsh_history
 export HISTFILESIZE=50000
 export HISTSIZE=50000
+export SAVEHIST=50000
 
 setopt appendhistory          # append to history file, don't overwrite it
 setopt extended_history       # record timestamp of command in HISTFILE
@@ -38,7 +39,6 @@ setopt hist_ignore_dups       # ignore duplicated commands history list
 setopt hist_ignore_space      # ignore commands that start with space
 setopt hist_verify            # show command with history expansion to user before running it
 setopt share_history          # share command history data
-setopt incappendhistory       # save history incrementally
 
 # Customize to your needs...
 export PATH=./.bin:$PATH
