@@ -4,3 +4,4 @@ shell-integration-features = no-cursor
 theme = carbonfox
 window-theme = ghostty
 adw-toolbar-style = flat
+app-notifications = false

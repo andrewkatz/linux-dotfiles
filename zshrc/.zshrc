@@ -87,7 +87,9 @@ alias ghm='gh pr merge -md --admin ; gp'
 alias rw='gh repo view -w'
 alias prw='gh pr view -w'
 alias prc='gh pr create'
+
 alias lg='lazygit'
+alias ld='lazydocker'
 
 alias rs='rails server'
 alias rc='rails console'
@@ -112,7 +114,7 @@ alias update='~/.bin/update'
 alias ssh_core='ssh -i ~/.ssh/liz/portal-dev-or.pem ubuntu@54.70.173.252'
 alias ssh_lg_api='ssh -i ~/.ssh/liz/portal-dev-or.pem ubuntu@44.232.21.7'
 alias ssh_whitelabel='ssh -i ~/.ssh/liz/portal-dev-or.pem ubuntu@44.232.205.154'
-alias ssh_data_tunnel='ssh ubuntu@data.giantpartners.com'
+alias ssh_data_tunnel='ssh andrewkatz@data.giantpartners.com'
 alias ssh_sftp='ssh -i ~/.ssh/liz/portal-dev-or.pem ubuntu@34.209.57.22'
 
 alias t='terraform'
