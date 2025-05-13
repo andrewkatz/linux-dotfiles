@@ -88,7 +88,6 @@ alias rw='gh repo view -w'
 alias prw='gh pr view -w'
 alias prc='gh pr create'
 
-alias lg='lazygit'
 alias ld='lazydocker'
 
 alias rs='rails server'
@@ -140,6 +139,12 @@ nvimrc()
   cd ~/.config/nvim
   nvim
   cd $previous_dir
+}
+
+lg()
+{
+  lazygit
+  echo -ne "\033[4 q"
 }
 
 ulimit -n 2560
